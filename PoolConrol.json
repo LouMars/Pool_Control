@@ -1,0 +1,3029 @@
+[
+    {
+        "id": "07eda5d48558bdba",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7bdd2689f8e52628",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bbbd23aca0db2c0c",
+        "type": "ui_group",
+        "name": "Pool Control",
+        "tab": "1dda63af6a0d8fcb",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1dda63af6a0d8fcb",
+        "type": "ui_tab",
+        "name": "Status",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "770b7f7ac5e63e48",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "PoolControl1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6db046",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4b7930",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Maresca Manor Pool Control",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dacc07b33637c6a4",
+        "type": "hs-server",
+        "name": "",
+        "host": "192.168.5.100",
+        "port": "80"
+    },
+    {
+        "id": "3c51f0135126dcab",
+        "type": "ui_group",
+        "name": "Pool Control",
+        "tab": "ea3ac87755546e8d",
+        "order": 1,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ea3ac87755546e8d",
+        "type": "ui_tab",
+        "name": "Maresca Manor",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "53dfa061fd56218a",
+        "type": "ui_group",
+        "name": "Solar",
+        "tab": "1dda63af6a0d8fcb",
+        "order": 3,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9bd54e8fbc10656b",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "ea3ac87755546e8d",
+        "order": 2,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8ddf24064f2305db",
+        "type": "ui_group",
+        "name": "TextBlock",
+        "tab": "ea3ac87755546e8d",
+        "order": 3,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba8a2f475bd2fa68",
+        "type": "serial-port",
+        "serialport": "/dev/serial0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "1000",
+        "bin": "bin",
+        "out": "time",
+        "addchar": "",
+        "responsetimeout": "1000"
+    },
+    {
+        "id": "c778f9b12cd22d71",
+        "type": "ui_spacer",
+        "z": "7bdd2689f8e52628",
+        "name": "spacer",
+        "group": "9bd54e8fbc10656b",
+        "order": 4,
+        "width": "3",
+        "height": "1"
+    },
+    {
+        "id": "22e5756349db9043",
+        "type": "ui_spacer",
+        "z": "7bdd2689f8e52628",
+        "name": "spacer",
+        "group": "9bd54e8fbc10656b",
+        "order": 2,
+        "width": "3",
+        "height": "1"
+    },
+    {
+        "id": "554d51edba116142",
+        "type": "ui_spacer",
+        "z": "07eda5d48558bdba",
+        "name": "spacer",
+        "group": "9bd54e8fbc10656b",
+        "order": 6,
+        "width": "3",
+        "height": "6"
+    },
+    {
+        "id": "a788c099224ac3b3",
+        "type": "ui_spacer",
+        "z": "7bdd2689f8e52628",
+        "name": "spacer",
+        "group": "53dfa061fd56218a",
+        "order": 2,
+        "width": "3",
+        "height": "1"
+    },
+    {
+        "id": "74ac1a984107d509",
+        "type": "ui_spacer",
+        "z": "7bdd2689f8e52628",
+        "name": "spacer",
+        "group": "53dfa061fd56218a",
+        "order": 4,
+        "width": "3",
+        "height": "1"
+    },
+    {
+        "id": "89e274d01422c46a",
+        "type": "ui_group",
+        "name": "Pool Control",
+        "tab": "ea3ac87755546e8d",
+        "order": 1,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "860e0a4469b36489",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "Air Temp (d)",
+        "device": "3",
+        "server": "dacc07b33637c6a4",
+        "feature": 0,
+        "reportonstartup": true,
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "41d5b52015a0e16d"
+            ]
+        ]
+    },
+    {
+        "id": "abcc9529f7ad2fc0",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "9bd54e8fbc10656b",
+        "order": 1,
+        "width": 3,
+        "height": "2",
+        "gtype": "gage",
+        "title": "Air Temperature",
+        "label": "Deg F",
+        "format": "{{msg.payload.value}}",
+        "min": "50",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "80",
+        "className": "",
+        "x": 860,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "eeb801c6523b4bbb",
+        "type": "pimcp3008",
+        "z": "07eda5d48558bdba",
+        "name": "Control Box Temp",
+        "dev": "3008",
+        "pin": "3",
+        "dnum": "1",
+        "bus": 0,
+        "x": 350,
+        "y": 860,
+        "wires": [
+            [
+                "fb25e7ec8d46d7b5"
+            ]
+        ]
+    },
+    {
+        "id": "fb25e7ec8d46d7b5",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Thermistor to Temp F",
+        "func": "var lr = 1\nvar r = 0;\nvar k = 273.15;\nvar t0 = 25; //Nominal Temp C\nvar r0 = 10000; //Nominal Resistance Ohms\nvar Tc = 0;\nvar Tf =0;\nvar Beta  // Device constant\nBeta = 3350  // Radio Shack\n//Beta = 3900 //Hayward\n//average 10 readings\n//for (i = 1 ; i<11 ; i++)\n//{\n  lr =  context.get(\"LastRead\")\n   r =  msg.payload;\n   if (r/lr > 0.995 && r/lr < 1.005)\n   {\n       r = lr\n   }\n   context.set(\"LastRead\",r )\n   //pausecomp(10)\n//}\n//r = r/10;  //Average reading\nr = 10240000/r-10000; //Resistance\n\nTc = (1/Beta)*Math.log(r/r0)+ (1/(t0+k));\nTc = (1/Tc) - k; //Temp C\nTf = (9*Tc/5) + 32;  //Temp F\nTf = Tf*1;  //Make it a number for ToFixed to work\nmsg.payload = {value : Tf.toFixed(1)}; //Set # of Decmal pt\n\nreturn msg.payload;\n\nfunction pausecomp(millis)\n{\n    var date = new Date();\n    var curDate = null;\n    do { curDate = new Date(); }\n    while(curDate-date < millis);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.set (\"LastRead\", 1) \n// whenever the node is started.\n",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 860,
+        "wires": [
+            [
+                "e96bbd9691e3c517"
+            ]
+        ]
+    },
+    {
+        "id": "32f9755151be51d6",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "P0 Pool Jasco Switch Main Pump",
+        "device": "295",
+        "server": "dacc07b33637c6a4",
+        "feature": "302",
+        "reportonstartup": true,
+        "x": 540,
+        "y": 1780,
+        "wires": [
+            [
+                "a6d3da79aaa51f78",
+                "6fc1d399309d89f6"
+            ]
+        ]
+    },
+    {
+        "id": "11da1a5e788defd3",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Waterfall On",
+        "tooltip": "Turn on waterfall",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"value\" : 1}",
+        "payloadType": "json",
+        "topic": "control",
+        "topicType": "str",
+        "x": 130,
+        "y": 1280,
+        "wires": [
+            [
+                "ddba413916b7ada9"
+            ]
+        ]
+    },
+    {
+        "id": "f7d49df5d7d1b3ee",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 1,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#63e963",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 910,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "c91bf6d490d3560a",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 17,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "{\"value\" : 0 }",
+                "valueType": "json"
+            },
+            {
+                "color": "#63e963",
+                "value": "{\"value\" : 255 }",
+                "valueType": "json"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 970,
+        "y": 1780,
+        "wires": [],
+        "info": "Main Pump Led"
+    },
+    {
+        "id": "a6d3da79aaa51f78",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "On/Off to Value",
+        "func": "var lit = global.get(\"MainPump\");\nif (msg.payload.status == \"Off\")\n    {\n        msg.payload = {\"value\" : 0};\n        global.set(\"MainPump\",true);\n    }\nif (msg.payload.status == \"On\")\n    {\n        msg.payload = {\"value\" : 255} \n        global.set(\"MainPump\",false);\n     }   \n     return msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1780,
+        "wires": [
+            [
+                "c91bf6d490d3560a"
+            ]
+        ]
+    },
+    {
+        "id": "27d4ddb5afd3d873",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Globals",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "global.set(\"PoolLight\",false);\nglobal.set(\"SpaLight\",false);\nglobal.set(\"MainPump\",false);\nglobal.set(\"AirPump\",false);\nglobal.set(\"JetPump\",false);\nglobal.set(\"Heater\",false);\n// global.set(\"SolarLimit\", 90);\n// global.set(\"PropaneLimit\", 100);\nglobal.set(\"SolarOnDiff\", 4);\nglobal.set(\"SolarOffDiff\", 0);\nglobal.set (\"SolDiff\" , 0);\nglobal.set (\"UseSolar\", false);\nglobal.set(\"PoolTemperature\",75.0);\nglobal.set(\"Last_Value\", 22);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d71ad15ffa5951aa",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Spa On / WF Off",
+        "tooltip": "Water circulates in Spa only",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"value\" : 0}",
+        "payloadType": "json",
+        "topic": "control",
+        "topicType": "str",
+        "x": 140,
+        "y": 1360,
+        "wires": [
+            [
+                "ddba413916b7ada9"
+            ]
+        ],
+        "info": "`if initialized, valve will switch to SPA Mode `"
+    },
+    {
+        "id": "371c23ec8e427d1f",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "d": true,
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Pool Only",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 1540,
+        "wires": [
+            [
+                "1abcb0ced635918f"
+            ]
+        ]
+    },
+    {
+        "id": "5749b917c38aac5a",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Air Bubbles",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "control",
+        "topicType": "msg",
+        "x": 270,
+        "y": 980,
+        "wires": [
+            [
+                "c7581922e609ddb9"
+            ]
+        ]
+    },
+    {
+        "id": "b94e841b9721ca37",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Spa Jets",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "control",
+        "topicType": "msg",
+        "x": 260,
+        "y": 1040,
+        "wires": [
+            [
+                "36dc14c4216ffade"
+            ]
+        ]
+    },
+    {
+        "id": "737d7579452179d6",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Propane Heater",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "control",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1160,
+        "wires": [
+            [
+                "04051f714ff31d5b"
+            ]
+        ]
+    },
+    {
+        "id": "b9783bd35cf06993",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 3,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#63e963",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 910,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "992b80082a9770ef",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 20,
+        "group": "3c51f0135126dcab",
+        "width": "4",
+        "height": 1,
+        "label": "Solar Heat",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0d0d0d",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#e9e063",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 990,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "514f23df3994b990",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 7,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#63e963",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 990,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ad81ee7b468a308f",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 9,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#63e963",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 990,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "96d639a091e56bb0",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 11,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#63e963",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 1010,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "d695fc502bc5be1e",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 18,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Main Pump",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "control",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1780,
+        "wires": [
+            [
+                "0f662b8d81f7a62b"
+            ]
+        ]
+    },
+    {
+        "id": "f1a0a91cf0d2592e",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Spa Light",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "control",
+        "topicType": "msg",
+        "x": 160,
+        "y": 1640,
+        "wires": [
+            [
+                "37a10cae6aeed107"
+            ]
+        ]
+    },
+    {
+        "id": "7013a7daa0222a10",
+        "type": "ui_button",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "3c51f0135126dcab",
+        "order": 16,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Pool Light",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "control",
+        "topicType": "msg",
+        "x": 160,
+        "y": 1700,
+        "wires": [
+            [
+                "68fde5713e51adfe"
+            ]
+        ]
+    },
+    {
+        "id": "e96bbd9691e3c517",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "bbbd23aca0db2c0c",
+        "order": 1,
+        "width": "4",
+        "height": 2,
+        "gtype": "gage",
+        "title": "Controller Box",
+        "label": "Deg",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "110",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "80",
+        "seg2": "90",
+        "className": "",
+        "x": 940,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "41d5b52015a0e16d",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Trim to ##.#",
+        "func": "var temp = 0;\ntemp = msg.payload.value;\ntemp = temp.toFixed(1);\nmsg.payload  = {\"value\" : temp *1};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 320,
+        "wires": [
+            [
+                "abcc9529f7ad2fc0"
+            ]
+        ]
+    },
+    {
+        "id": "b9b18b92d1f9e574",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "Node 25 Z-Wave Spa Light Switch",
+        "device": "239",
+        "server": "dacc07b33637c6a4",
+        "feature": "242",
+        "reportonstartup": true,
+        "x": 540,
+        "y": 1640,
+        "wires": [
+            [
+                "864ee983c7c0177a"
+            ]
+        ]
+    },
+    {
+        "id": "ef2ae218a170bce8",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "Node 26 Z-Wave Pool Light Switch",
+        "device": "243",
+        "server": "dacc07b33637c6a4",
+        "feature": "246",
+        "reportonstartup": true,
+        "x": 540,
+        "y": 1700,
+        "wires": [
+            [
+                "48efd6d1eb0b036b"
+            ]
+        ]
+    },
+    {
+        "id": "37a10cae6aeed107",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Toggle",
+        "func": "var lit = global.get(\"SpaLight\");\nlit = !(lit);\nif (lit)\n    { \n        msg.payload = {\"value\":0} \n    }\nelse\n    { \n        msg.payload = {\"value\":255} \n    }\n\n// global.set(\"SpaLight\",lit);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1640,
+        "wires": [
+            [
+                "b9b18b92d1f9e574"
+            ]
+        ]
+    },
+    {
+        "id": "48efd6d1eb0b036b",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "On/Off to Value",
+        "func": "var lit = global.get(\"PoolLight\");\nif (msg.payload.status == \"Off\")\n    {\n        msg.payload = {\"value\" : 0};\n        global.set(\"PoolLight\",true)\n    }\nif (msg.payload.status == \"On\")\n    {\n        msg.payload = {\"value\" : 255} \n        global.set(\"PoolLight\",false)\n    }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1700,
+        "wires": [
+            [
+                "6de783ef612d4871"
+            ]
+        ]
+    },
+    {
+        "id": "864ee983c7c0177a",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "On/Off to Value",
+        "func": "var lit = global.get(\"SpaLight\");\nif (msg.payload.status == \"Off\")\n    {\n        msg.payload = {\"value\" : 0};\n        global.set(\"SpaLight\", true)\n    }\nif (msg.payload.status == \"On\")\n    {\n        msg.payload = {\"value\" : 255} \n        global.set(\"SpaLight\", false)\n    }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1640,
+        "wires": [
+            [
+                "9ec333466135668c"
+            ]
+        ]
+    },
+    {
+        "id": "68fde5713e51adfe",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Toggle",
+        "func": "var lit = global.get(\"PoolLight\");\nlit = !(lit);\nif (lit)\n    { \n        msg.payload = {\"value\":0} \n    }\nelse\n    { \n        msg.payload = {\"value\":255} \n    }\n\n// global.set(\"PoolLight\",lit);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1700,
+        "wires": [
+            [
+                "ef2ae218a170bce8"
+            ]
+        ]
+    },
+    {
+        "id": "9ec333466135668c",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 13,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "{\"value\" : 0 }",
+                "valueType": "json"
+            },
+            {
+                "color": "#63e963",
+                "value": "{\"value\" : 255 }",
+                "valueType": "json"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 970,
+        "y": 1640,
+        "wires": [],
+        "info": "Spa Light Led"
+    },
+    {
+        "id": "6de783ef612d4871",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 15,
+        "group": "3c51f0135126dcab",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "{\"value\" : 0 }",
+                "valueType": "json"
+            },
+            {
+                "color": "#63e963",
+                "value": "{\"value\" : 255 }",
+                "valueType": "json"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 970,
+        "y": 1700,
+        "wires": [],
+        "info": "Pool Light Led"
+    },
+    {
+        "id": "0f662b8d81f7a62b",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Toggle",
+        "func": "var lit = global.get(\"MainPump\");\nlit = !(lit);\nif (lit)\n    { \n        msg.payload = {\"value\":0} \n    }\nelse\n    { \n        msg.payload = {\"value\":255} \n    }\n\n// global.set(\"MainPump\",lit);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1780,
+        "wires": [
+            [
+                "32f9755151be51d6"
+            ]
+        ]
+    },
+    {
+        "id": "7d9dbeca673dc6ad",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "pin": "23",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1000,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "c7581922e609ddb9",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Toggle",
+        "func": "var lit = global.get(\"AirPump\");\nlit = !(lit);\n\nmsg.payload = {\"value\" : 1, \"topic\" : \"control\"} ;\nif(lit)\n{\nmsg.payload = {\"value\" : 0, \"topic\" : \"control\"} ;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 980,
+        "wires": [
+            [
+                "6893f146d567df08"
+            ]
+        ]
+    },
+    {
+        "id": "f886504b6ba74bb3",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "pin": "24",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1000,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "36dc14c4216ffade",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Toggle",
+        "func": "var lit = global.get(\"JetPump\");\n\nlit = !(lit);\n\nmsg.payload = {\"value\" : 1, \"topic\" : \"control\"} ;\nif(lit)\n{\nmsg.payload = {\"value\" : 0, \"topic\" : \"control\"} ;\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1040,
+        "wires": [
+            [
+                "f227e8a8f3fff9ec"
+            ]
+        ]
+    },
+    {
+        "id": "04051f714ff31d5b",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Toggle",
+        "func": "var lit = global.get(\"Heater\");\nlit = !(lit);\n\nmsg.payload = {\"value\" : 1, \"topic\" : \"control\"} ;\nif(lit)\n{\nmsg.payload = {\"value\" : 0, \"topic\" : \"control\"} ;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar lit = global.get(\"Heater\");",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1160,
+        "wires": [
+            [
+                "3aeef7417ecef3c1"
+            ]
+        ]
+    },
+    {
+        "id": "fd6ad6260a2e4d34",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "Propane Heater",
+        "pin": "25",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 740,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "baa903e8b66ef3da",
+        "type": "ui_text",
+        "z": "07eda5d48558bdba",
+        "group": "3c51f0135126dcab",
+        "order": 23,
+        "width": 4,
+        "height": "2",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 670,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "6fc1d399309d89f6",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Generate Message",
+        "func": "if (msg.payload.status == \"Off\")\n{\n    msg.payload = \"When Main Pump is OFF, Pool Temps are not accurate\"\n}\nif (msg.payload.status == \"On\")\n{\n    msg.payload = \" \"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1900,
+        "wires": [
+            [
+                "baa903e8b66ef3da"
+            ]
+        ]
+    },
+    {
+        "id": "3fc76fd31e9b3957",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "Solar Valve",
+        "pin": "17",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 970,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "518e01776790fe3b",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "Drain Valve",
+        "pin": "27",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 910,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "ecebbc33fc0e318f",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "Return Valve",
+        "pin": "22",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 910,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "9627415ed0fe6645",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Solar Control",
+        "func": "'use strict';\n//  4/21/2022  Release\n//  4/22/2022  fix on/off hysteresis\n//  5/2/2022  New Release - Rewrite\n//  5/3/2022  Circulate for 2 minutes before valve change\nvar hy = 0;\nconst ON = 0;\nconst OFF = 1;\nvar s_lim = global.get(\"SolarLimit\")\nvar s_ON_dif = global.get(\"SolarOnDiff\");\nvar s_OFF_dif = global.get(\"SolarOffDiff\");\nvar s_dif = global.get(\"SolDiff\");\nvar p_temp_d = global.get(\"PoolTemp_d\");\nvar main_pump = global.get(\"MainPump\");\nvar last_val = context.get(\"Last_Value\");\nvar pump_on_time = context.get(\"PumpTime\");\nif (isNaN(pump_on_time)) {\n    pump_on_time = 0;\n    context.set(\"PumpTime\", pump_on_time);\n}\n\nif (!main_pump) {   //Pump ON  negitive true\n    pump_on_time = pump_on_time + 1;\n    context.set(\"PumpTime\", pump_on_time);\n}\nif (main_pump) {    //Pump OFF  negitive true\n    pump_on_time = 0;\n    context.set(\"PumpTime\", pump_on_time);\n}\n\nif (pump_on_time >= 12)  //negitive true - Pump running\n{\n    if (s_dif > s_ON_dif) {\n        if (p_temp_d < s_lim - hy) {\n            // Turn valve ON\n            hy = 0;\n            if (val_changed(last_val, ON)) {  //TRUE if new value different\n                msg.payload = { \"value\": ON, \"topic\": \"control\" };\n                last_val = ON;\n                context.set(\"Last_Value\", ON);\n                return msg;\n            }\n        }\n    }\n}\n\nif (pump_on_time < 12 || s_dif < s_OFF_dif || p_temp_d >= s_lim) {\n    //Turn Valve OFF\n    hy = 1;\n    if (val_changed(last_val, OFF)) {     //TRUE if new value different\n        msg.payload = { \"value\": OFF, \"topic\": \"control\" };\n        last_val = OFF\n        context.set(\"Last_Value\", OFF);\n        return msg;\n    }\n}\n\nfunction val_changed(a, b) {  //TRUE if new value different\n    if (a == b) {\n        return false;\n    }\n    else {\n        return true;\n    }\n}\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2060,
+        "wires": [
+            [
+                "238af8631bd3b77e"
+            ]
+        ]
+    },
+    {
+        "id": "2b6cf48e84ec40c1",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 3,
+        "group": "bbbd23aca0db2c0c",
+        "width": "4",
+        "height": "1",
+        "label": "Solar Valve",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#63e963",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 970,
+        "y": 1980,
+        "wires": [],
+        "info": "Main Pump Led"
+    },
+    {
+        "id": "a5b026fa95c78d83",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Drain Control",
+        "func": "if (msg.payload.value == 1)\n{\n    msg.payload = true\n}\nif (msg.payload.value == 0)\n{\n     msg.payload = false\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1320,
+        "wires": [
+            [
+                "f7d49df5d7d1b3ee",
+                "b9783bd35cf06993",
+                "ecebbc33fc0e318f",
+                "518e01776790fe3b"
+            ]
+        ]
+    },
+    {
+        "id": "5e6e67743e61f9ff",
+        "type": "ui_text",
+        "z": "07eda5d48558bdba",
+        "d": true,
+        "group": "9bd54e8fbc10656b",
+        "order": 7,
+        "width": "3",
+        "height": "3",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 490,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "1abcb0ced635918f",
+        "type": "trigger",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "op1": "Not Implemented",
+        "op2": "                                     ",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 300,
+        "y": 1540,
+        "wires": [
+            [
+                "5e6e67743e61f9ff"
+            ]
+        ]
+    },
+    {
+        "id": "0822b1eb50e24e0f",
+        "type": "inject",
+        "z": "07eda5d48558bdba",
+        "name": "initialize",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "sync",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 1140,
+        "wires": [
+            [
+                "5749b917c38aac5a",
+                "b94e841b9721ca37",
+                "737d7579452179d6",
+                "ddba413916b7ada9"
+            ]
+        ]
+    },
+    {
+        "id": "7e793927e25c17e0",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "TBD1",
+        "pin": "12",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 290,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "5d79c40f426b8bb1",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "TBD2",
+        "pin": "16",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 290,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "2cd071b92fb29a8f",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "9bd54e8fbc10656b",
+        "order": 3,
+        "width": 3,
+        "height": "2",
+        "gtype": "gage",
+        "title": "Pool Temperature",
+        "label": "Deg F",
+        "format": "{{msg.payload.value}}",
+        "min": "65",
+        "max": "105",
+        "colors": [
+            "#0300b3",
+            "#00e608",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 850,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7cbb5a28526e4ae3",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "Pool Drain Temperature",
+        "device": "237",
+        "server": "dacc07b33637c6a4",
+        "feature": "238",
+        "reportonstartup": true,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "fd86e74d405fe15b"
+            ]
+        ]
+    },
+    {
+        "id": "fd86e74d405fe15b",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Trim to ##.#",
+        "func": "var temp = 0;\ntemp = msg.payload.value;\ntemp = temp.toFixed(1);\nglobal.set (\"PoolTemp_d\" , temp);\nmsg.payload  = {\"value\" : temp * 1 }\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 380,
+        "wires": [
+            [
+                "2cd071b92fb29a8f"
+            ]
+        ]
+    },
+    {
+        "id": "78fbceb078197c2c",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "Pool Return Temperature ",
+        "device": "247",
+        "server": "dacc07b33637c6a4",
+        "feature": "248",
+        "reportonstartup": true,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "0606e2528729a85c"
+            ]
+        ]
+    },
+    {
+        "id": "82d26946f5f0f604",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "9bd54e8fbc10656b",
+        "order": 5,
+        "width": 3,
+        "height": "2",
+        "gtype": "gage",
+        "title": "Return Temperature",
+        "label": "Deg F",
+        "format": "{{msg.payload.value}}",
+        "min": "65",
+        "max": "105",
+        "colors": [
+            "#0300b3",
+            "#00e608",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 860,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "0606e2528729a85c",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Trim to ##.#",
+        "func": "var temp = 0;\ntemp = msg.payload.value;\ntemp = temp.toFixed(1);\nglobal.set (\"RetTemp_d\" , temp);\nmsg.payload  = {\"value\" : temp * 1 }\nreturn msg\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "82d26946f5f0f604"
+            ]
+        ]
+    },
+    {
+        "id": "8ec2f4d97557ea6f",
+        "type": "join",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 660,
+        "wires": [
+            [
+                "29c7b8c84fe282b2"
+            ]
+        ]
+    },
+    {
+        "id": "29c7b8c84fe282b2",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "T1 - T2",
+        "func": "var tdiff = 0;\nvar temp = 0\nmsg.topic = \"diff\";\ntdiff = msg.payload.T1 - msg.payload.T2;\ntemp= tdiff.toFixed(2) * 1;\nglobal.set (\"SolDiff\" , temp);\nmsg.payload = {value : temp};\nreturn msg.payload;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 660,
+        "wires": [
+            [
+                "68d546509cb3c235"
+            ]
+        ]
+    },
+    {
+        "id": "6e03f3629d8b02d5",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Set Topic to T2",
+        "func": "msg.topic = \"T2\"\nmsg.payload = msg.value;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 700,
+        "wires": [
+            [
+                "8ec2f4d97557ea6f"
+            ]
+        ]
+    },
+    {
+        "id": "e1cfe021d524abac",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Set Topic to T1",
+        "func": "msg.topic = \"T1\"\nmsg.payload = msg.value;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 640,
+        "wires": [
+            [
+                "8ec2f4d97557ea6f"
+            ]
+        ]
+    },
+    {
+        "id": "68d546509cb3c235",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "53dfa061fd56218a",
+        "order": 5,
+        "width": 3,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Temperture Diff",
+        "label": "Deg F",
+        "format": "{{value}}",
+        "min": "-5",
+        "max": "50",
+        "colors": [
+            "#0015b3",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1000,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "b1e2584220e4c857",
+        "type": "comment",
+        "z": "07eda5d48558bdba",
+        "name": "Temperature Diff",
+        "info": "Set Solar Limit",
+        "x": 320,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "177dbd1fc25bd818",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "53dfa061fd56218a",
+        "order": 1,
+        "width": 3,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Solar Panel",
+        "label": "Deg",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "150",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "80",
+        "seg2": "90",
+        "className": "",
+        "x": 890,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "fd28f81a3bbf81af",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Thermistor to Temp F",
+        "func": "var lr = 1\nvar r = 0;\nvar k = 273.15;\nvar t0 = 25; //Nominal Temp C\nvar r0 = 10000; //Nominal Resistance Ohms\nvar Tc = 0;\nvar Tf =0;\nvar Beta  // Device constant\n// Beta = 3350  // Radio Shack\nBeta = 3900 //Hayward\n//average 10 readings\n//for (i = 1 ; i<11 ; i++)\n//{\n  lr =  context.get(\"LastRead\")\n   r =  msg.payload;\n   if (r/lr > 0.995 && r/lr < 1.005)\n   {\n       r = lr\n   }\n   context.set(\"LastRead\",r )\n   //pausecomp(10)\n//}\n//r = r/10;  //Average reading\nr = 10240000/r-10000; //Resistance\n\nTc = (1/Beta)*Math.log(r/r0)+ (1/(t0+k));\nTc = (1/Tc) - k; //Temp C\nTf = (9*Tc/5) + 32;  //Temp F\nTf = Tf*1;  //Make it a number for ToFixed to work\nmsg.payload = {value : Tf.toFixed(1)}; //Set # of Decmal pt\n\nreturn msg.payload;\n\nfunction pausecomp(millis)\n{\n    var date = new Date();\n    var curDate = null;\n    do { curDate = new Date(); }\n    while(curDate-date < millis);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.set (\"LastRead\", 1) \n// whenever the node is started.\n",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 560,
+        "wires": [
+            [
+                "177dbd1fc25bd818",
+                "e1cfe021d524abac"
+            ]
+        ]
+    },
+    {
+        "id": "de1ba78063ed2a0e",
+        "type": "pimcp3008",
+        "z": "07eda5d48558bdba",
+        "name": "Solar Panel Temp",
+        "dev": "3008",
+        "pin": "2",
+        "dnum": "1",
+        "bus": 0,
+        "x": 330,
+        "y": 560,
+        "wires": [
+            [
+                "fd28f81a3bbf81af"
+            ]
+        ]
+    },
+    {
+        "id": "62488a3badd2aaac",
+        "type": "pimcp3008",
+        "z": "07eda5d48558bdba",
+        "name": "Analog Pool Temp",
+        "dev": "3008",
+        "pin": "1",
+        "dnum": "1",
+        "bus": 0,
+        "x": 350,
+        "y": 760,
+        "wires": [
+            [
+                "c2a2e5f793ac7557"
+            ]
+        ]
+    },
+    {
+        "id": "c2a2e5f793ac7557",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Thermistor to Temp F",
+        "func": "var lr = 1\nvar r = 0;\nvar k = 273.15;\nvar t0 = 25; //Nominal Temp C\nvar r0 = 10000; //Nominal Resistance Ohms\nvar Tc = 0;\nvar Tf =0;\nvar Beta  // Device constant\n// Beta = 3350  // Radio Shack\nBeta = 3900 //Hayward\n//average 10 readings\n//for (i = 1 ; i<11 ; i++)\n//{\n  lr =  context.get(\"LastRead\")\n   r =  msg.payload;\n   if (r/lr > 0.995 && r/lr < 1.005)\n   {\n       r = lr\n   }\n   context.set(\"LastRead\",r )\n   //pausecomp(10)\n//}\n//r = r/10;  //Average reading\nr = 10240000/r-10000; //Resistance\n\nTc = (1/Beta)*Math.log(r/r0)+ (1/(t0+k));\nTc = (1/Tc) - k; //Temp C\nTf = (9*Tc/5) + 32;  //Temp F\nTf = Tf*1;  //Make it a number for ToFixed to work\nmsg.payload = {value : Tf.toFixed(1)}; //Set # of Decmal pt\nglobal.set(\"PoolTemperature\",Tf.toFixed(1));\nreturn msg.payload;\n\nfunction pausecomp(millis)\n{\n    var date = new Date();\n    var curDate = null;\n    do { curDate = new Date(); }\n    while(curDate-date < millis);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.set (\"LastRead\", 1) \n// whenever the node is started.\n",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 760,
+        "wires": [
+            [
+                "25f46c54f145a5e7",
+                "6e03f3629d8b02d5"
+            ]
+        ]
+    },
+    {
+        "id": "25f46c54f145a5e7",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "53dfa061fd56218a",
+        "order": 3,
+        "width": 3,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Analog Pool Temp",
+        "label": "Deg",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "110",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "80",
+        "seg2": "90",
+        "className": "",
+        "x": 910,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "a7527696b9b46e18",
+        "type": "inject",
+        "z": "07eda5d48558bdba",
+        "name": "Poke every 5 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sync",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 660,
+        "wires": [
+            [
+                "de1ba78063ed2a0e",
+                "eeb801c6523b4bbb",
+                "2273d984ca24e37c",
+                "62488a3badd2aaac",
+                "860e0a4469b36489",
+                "7cbb5a28526e4ae3",
+                "78fbceb078197c2c"
+            ]
+        ]
+    },
+    {
+        "id": "48ce0f15a9843a1a",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Toggle Yellow LED",
+        "func": "var lit = context.get(\"LED_OK\");\nlit = !(lit);\ncontext.set(\"LED_OK\",lit);\nmsg.payload = lit\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "a6b5880ae7cfb9ae"
+            ]
+        ]
+    },
+    {
+        "id": "a6b5880ae7cfb9ae",
+        "type": "rpi-gpio out",
+        "z": "07eda5d48558bdba",
+        "name": "Yellow LED",
+        "pin": "20",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 730,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8ea10db996ce08bc",
+        "type": "inject",
+        "z": "07eda5d48558bdba",
+        "name": "Poke every 2 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 160,
+        "wires": [
+            [
+                "48ce0f15a9843a1a"
+            ]
+        ]
+    },
+    {
+        "id": "f6e1e0b9195de0db",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "order": 19,
+        "group": "3c51f0135126dcab",
+        "width": "4",
+        "height": "1",
+        "label": "Propane Heater",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0f0f0f",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#8dd7f7",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 670,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "511b779b027387ea",
+        "type": "ui_led",
+        "z": "07eda5d48558bdba",
+        "d": true,
+        "order": 5,
+        "group": "3c51f0135126dcab",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 630,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "cd8057da1e7ef98a",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Propane Heater Control",
+        "func": "//  4/21/2022\n'use strict';\nvar heater_req = (global.get(\"Heater\"));\nvar propane_max = global.get(\"PropaneLimit\");\nvar heater_delta = global.get(\"PropaneDelta\") * 1;\nvar pool_temp = global.get(\"PoolTemperature\") * 1;\nvar been_there = context.get(\"Status\");\n//if (typeof(been_there) == \"undefined\") {\n//        been_there = false\n//    }\n\nvar old_max = context.get(\"OldMax\")\nif (old_max != propane_max) {\n    been_there = false\n}\n\nif (heater_req) {\n    been_there = context.get(\"Status\");\n     if (pool_temp > propane_max) {\n        been_there = true;\n        context.set(\"Status\", been_there);\n        msg.payload = true;  //OFF   negitive true\n        return msg;\n    }\n    if ((pool_temp + heater_delta ) < propane_max) {\n        msg.payload = false;  //ON     negitive true\n        been_there = false    \n        context.set(\"Status\", been_there);\n        return msg;\n    }\n     \n    if (!(been_there) && (pool_temp < propane_max) )  {    \n            msg.payload = false;  //ON     negitive true\n            return msg;    \n    }\n    \n    if (been_there && (pool_temp + heater_delta) > propane_max ){\n        msg.payload = true;  //Off     negitive true\n        return msg;\n        \n    }\n}\n\nif (!(heater_req))   //not needed\n{\n    context.set(\"Status\", been_there);\n    msg.payload = true;  //OFF   negitive true\n}\ncontext.set(\"OldMax\", propane_max);\nmsg.payload = true\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 2160,
+        "wires": [
+            [
+                "f6e1e0b9195de0db",
+                "fd6ad6260a2e4d34"
+            ]
+        ]
+    },
+    {
+        "id": "9463e51854ad2e0c",
+        "type": "inject",
+        "z": "07eda5d48558bdba",
+        "name": "Poke Every 5 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "control",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 2060,
+        "wires": [
+            [
+                "9627415ed0fe6645",
+                "cd8057da1e7ef98a"
+            ]
+        ]
+    },
+    {
+        "id": "238af8631bd3b77e",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "P3 Pool Solar Valve Control",
+        "device": "258",
+        "server": "dacc07b33637c6a4",
+        "feature": "259",
+        "reportonstartup": false,
+        "x": 600,
+        "y": 2060,
+        "wires": [
+            [
+                "f5cf33ac355725d0"
+            ]
+        ]
+    },
+    {
+        "id": "f5cf33ac355725d0",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "HS to Pi",
+        "func": "msg.payload = msg.payload.value\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 2060,
+        "wires": [
+            [
+                "992b80082a9770ef",
+                "2b6cf48e84ec40c1",
+                "3fc76fd31e9b3957"
+            ]
+        ]
+    },
+    {
+        "id": "2273d984ca24e37c",
+        "type": "pimcp3008",
+        "z": "07eda5d48558bdba",
+        "name": "Analog Air Temp",
+        "dev": "3008",
+        "pin": "0",
+        "dnum": "1",
+        "bus": 0,
+        "x": 320,
+        "y": 500,
+        "wires": [
+            [
+                "f3068878f05ec001"
+            ]
+        ]
+    },
+    {
+        "id": "f3068878f05ec001",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "Thermistor to Temp F",
+        "func": "var lr = 1\nvar r = 0;\nvar k = 273.15;\nvar t0 = 25; //Nominal Temp C\nvar r0 = 10000; //Nominal Resistance Ohms\nvar Tc = 0;\nvar Tf =0;\nvar Beta  // Device constant\nBeta = 3350  // Radio Shack\n// Beta = 3900 //Hayward\n//average 10 readings\n//for (i = 1 ; i<11 ; i++)\n//{\n  lr =  context.get(\"LastRead\")\n   r =  msg.payload;\n   if (r/lr > 0.995 && r/lr < 1.005)\n   {\n       r = lr\n   }\n   context.set(\"LastRead\",r )\n   //pausecomp(10)\n//}\n//r = r/10;  //Average reading\nr = 10240000/r-10000; //Resistance\n\nTc = (1/Beta)*Math.log(r/r0)+ (1/(t0+k));\nTc = (1/Tc) - k; //Temp C\nTf = (9*Tc/5) + 32;  //Temp F\nTf = Tf*1;  //Make it a number for ToFixed to work\nmsg.payload = {value : Tf.toFixed(1)}; //Set # of Decmal pt\n\nreturn msg.payload;\n\nfunction pausecomp(millis)\n{\n    var date = new Date();\n    var curDate = null;\n    do { curDate = new Date(); }\n    while(curDate-date < millis);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.set (\"LastRead\", 1) \n// whenever the node is started.\n",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 500,
+        "wires": [
+            [
+                "239b6b5558235c29"
+            ]
+        ]
+    },
+    {
+        "id": "239b6b5558235c29",
+        "type": "ui_gauge",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "group": "53dfa061fd56218a",
+        "order": 1,
+        "width": 3,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Analog Air",
+        "label": "Deg",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "150",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "80",
+        "seg2": "90",
+        "className": "",
+        "x": 830,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2743422aa631d416",
+        "type": "comment",
+        "z": "07eda5d48558bdba",
+        "name": "RS485",
+        "info": "",
+        "x": 630,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "9565074d9e7226bd",
+        "type": "inject",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "how now",
+        "payloadType": "str",
+        "x": 640,
+        "y": 2480,
+        "wires": [
+            [
+                "d9b178a210ab0e77"
+            ]
+        ]
+    },
+    {
+        "id": "d9b178a210ab0e77",
+        "type": "serial out",
+        "z": "07eda5d48558bdba",
+        "name": "Tx",
+        "serial": "ba8a2f475bd2fa68",
+        "x": 650,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "25d8ea33534840c5",
+        "type": "serial in",
+        "z": "07eda5d48558bdba",
+        "name": "Rx",
+        "serial": "ba8a2f475bd2fa68",
+        "x": 630,
+        "y": 2620,
+        "wires": [
+            [
+                "72063365584e8d18"
+            ]
+        ]
+    },
+    {
+        "id": "ddba413916b7ada9",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "P4 Pool Waterfall - Spa Control Control",
+        "device": "262",
+        "server": "dacc07b33637c6a4",
+        "feature": "263",
+        "reportonstartup": true,
+        "x": 410,
+        "y": 1320,
+        "wires": [
+            [
+                "a5b026fa95c78d83"
+            ]
+        ]
+    },
+    {
+        "id": "f2a32c4ef2b96ec2",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "HS to Pi",
+        "func": "if (msg.payload.value == 1)\n{\n    msg.payload = true\n    global.set(\"Heater\",false);\n}\nif (msg.payload.value == 0)\n{\n     msg.payload = false\n     global.set(\"Heater\",true);\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1160,
+        "wires": [
+            [
+                "96d639a091e56bb0"
+            ]
+        ]
+    },
+    {
+        "id": "3aeef7417ecef3c1",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "P5 Pool Propane Heater Control",
+        "device": "266",
+        "server": "dacc07b33637c6a4",
+        "feature": "267",
+        "reportonstartup": true,
+        "x": 670,
+        "y": 1160,
+        "wires": [
+            [
+                "f2a32c4ef2b96ec2"
+            ]
+        ]
+    },
+    {
+        "id": "6893f146d567df08",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "P6 Pool Air Pump Control",
+        "device": "268",
+        "server": "dacc07b33637c6a4",
+        "feature": "269",
+        "reportonstartup": true,
+        "x": 610,
+        "y": 980,
+        "wires": [
+            [
+                "410a5fcc3c8ba43e"
+            ]
+        ]
+    },
+    {
+        "id": "f227e8a8f3fff9ec",
+        "type": "hs-device",
+        "z": "07eda5d48558bdba",
+        "name": "P6 Pool Jet Pump Control",
+        "device": "270",
+        "server": "dacc07b33637c6a4",
+        "feature": "271",
+        "reportonstartup": true,
+        "x": 610,
+        "y": 1040,
+        "wires": [
+            [
+                "9b9ec11470d569d7"
+            ]
+        ]
+    },
+    {
+        "id": "410a5fcc3c8ba43e",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "HS to Pi",
+        "func": "if (msg.payload.value == 1)\n{\n    msg.payload = true\n    global.set(\"AirPump\",false);\n}\nif (msg.payload.value == 0)\n{\n     msg.payload = false\n     global.set(\"AirPump\",true);\n}\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 960,
+        "wires": [
+            [
+                "514f23df3994b990",
+                "7d9dbeca673dc6ad"
+            ]
+        ]
+    },
+    {
+        "id": "9b9ec11470d569d7",
+        "type": "function",
+        "z": "07eda5d48558bdba",
+        "name": "HS to Pi",
+        "func": "if (msg.payload.value == 1)\n{\n    msg.payload = true\n    global.set(\"JetPump\",false);\n}\nif (msg.payload.value == 0)\n{\n     msg.payload = false\n     global.set(\"JetPump\",true);\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1060,
+        "wires": [
+            [
+                "ad81ee7b468a308f",
+                "f886504b6ba74bb3"
+            ]
+        ]
+    },
+    {
+        "id": "235c6821b5a4141b",
+        "type": "ui_numeric",
+        "z": "07eda5d48558bdba",
+        "d": true,
+        "name": "",
+        "label": "pool T test",
+        "tooltip": "",
+        "group": "bbbd23aca0db2c0c",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "450",
+        "max": "650",
+        "step": "10",
+        "className": "",
+        "x": 90,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b54c254799d32c37",
+        "type": "ui_numeric",
+        "z": "07eda5d48558bdba",
+        "d": true,
+        "name": "",
+        "label": "Panel T Test",
+        "tooltip": "",
+        "group": "bbbd23aca0db2c0c",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "400",
+        "max": "800",
+        "step": "10",
+        "className": "",
+        "x": 90,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24ed1652f2acf797",
+        "type": "comment",
+        "z": "07eda5d48558bdba",
+        "name": "For Testing",
+        "info": "",
+        "x": 80,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "72063365584e8d18",
+        "type": "debug",
+        "z": "07eda5d48558bdba",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "41f6dbe2e9d147d9",
+        "type": "inject",
+        "z": "07eda5d48558bdba",
+        "name": "Sync w/HomeSeer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "sync",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 1900,
+        "wires": [
+            [
+                "32f9755151be51d6",
+                "238af8631bd3b77e",
+                "b9b18b92d1f9e574",
+                "ef2ae218a170bce8"
+            ]
+        ]
+    },
+    {
+        "id": "161932dd20860d75",
+        "type": "ui_numeric",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "label": "   Solar Limit",
+        "tooltip": "",
+        "group": "3c51f0135126dcab",
+        "order": 22,
+        "width": "4",
+        "height": "1",
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "105",
+        "step": 1,
+        "className": "",
+        "x": 670,
+        "y": 560,
+        "wires": [
+            [
+                "ebf2ea3881f2ff26"
+            ]
+        ]
+    },
+    {
+        "id": "ebfb263427421b05",
+        "type": "ui_numeric",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "label": "Solar ON Diff ",
+        "tooltip": "",
+        "group": "bbbd23aca0db2c0c",
+        "order": 2,
+        "width": 3,
+        "height": 2,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": ".5",
+        "className": "",
+        "x": 670,
+        "y": 620,
+        "wires": [
+            [
+                "ebf2ea3881f2ff26"
+            ]
+        ]
+    },
+    {
+        "id": "f6e9cf059ff7aa2a",
+        "type": "ui_numeric",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "label": "Solar OFF Diff",
+        "tooltip": "",
+        "group": "bbbd23aca0db2c0c",
+        "order": 4,
+        "width": 3,
+        "height": 2,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "-2",
+        "max": "10",
+        "step": ".5",
+        "className": "",
+        "x": 680,
+        "y": 680,
+        "wires": [
+            [
+                "ebf2ea3881f2ff26"
+            ]
+        ]
+    },
+    {
+        "id": "cb071e8f61dedbba",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Prep data",
+        "func": "// global variables separated by semicolon to be saved\n\nvar globallist = \"SolarLimit;SolarOnDiff;SolarOffDiff;PropaneLimit;PropaneDelta\";\nvar mylist = globallist.split(\";\");\n\nvar outputs = [];\n\nfor (i=0; i<mylist.length; i++) {\n    outputs.push({ key : mylist[i], type: typeof global.get(mylist[i]), value: global.get(mylist[i])});\n}\n   \nmsg.payload = outputs;\nreturn msg;\n\n//msg.payload=typeof global.get(\"torrent_keywords\");\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 840,
+        "wires": [
+            [
+                "275cfcf969ee4c08"
+            ]
+        ]
+    },
+    {
+        "id": "373242df07f309e8",
+        "type": "comment",
+        "z": "7bdd2689f8e52628",
+        "name": "Save global variables",
+        "info": "",
+        "x": 700,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "0cbea4c4e0e25886",
+        "type": "comment",
+        "z": "7bdd2689f8e52628",
+        "name": "Restore global variables",
+        "info": "",
+        "x": 1140,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "695b2bb3c80f04d1",
+        "type": "inject",
+        "z": "7bdd2689f8e52628",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "34d3fb26d3ec4ff7"
+            ]
+        ]
+    },
+    {
+        "id": "a6395c9e556a376e",
+        "type": "file",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "filename": "/home/pi/global.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 840,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34d3fb26d3ec4ff7",
+        "type": "file in",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "filename": "/home/pi/global.json",
+        "format": "utf8",
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "e99f978a9ade69d7"
+            ]
+        ]
+    },
+    {
+        "id": "168634725ec0ad92",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Restore",
+        "func": "var output = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n    switch (msg.payload[i].type) {\n        case 'undefined': \n            // the global variable probably had no value, nothing needs to be restored\n            output.push(msg.payload[i].key + \" is undefined.\");\n            break;\n        case 'number':\n            if (msg.payload[i].value===\"NaN\") {\n                // there is no valid value to be restored, skip this variable\n                output.push(msg.payload[i].key + \" is NaN.\");\n            } else {\n                if (msg.payload[i].value.toString().indexOf(\".\")>-1) {\n                    // the value appears to be a float\n                    global.set(msg.payload[i].key,parseFloat(msg.payload[i].value));\n                    output.push(msg.payload[i].key + \" is restored to \" + msg.payload[i].value);\n                } else {\n                    global.set(msg.payload[i].key,parseInt(msg.payload[i].value));\n                    output.push(msg.payload[i].key + \" is restored to \" + msg.payload[i].value);\n                }\n            }\n            break;\n        case 'string':\n            global.set(msg.payload[i].key,msg.payload[i].value);\n            output.push(msg.payload[i].key + \" is restored to \" + msg.payload[i].value);\n            break;\n        case 'boolean':\n            global.set(msg.payload[i].key,msg.payload[i].value===\"true\");\n            output.push(msg.payload[i].key + \" is restored to \" + msg.payload[i].value);\n            break;\n    }\n}\n\nmsg.payload = output;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "c6acd2fbc7c00ee8",
+                "4bac76060be2946e",
+                "e6ad8b656ff0515f",
+                "0b878aa11dd06079",
+                "2813fcaff327c3c3"
+            ]
+        ]
+    },
+    {
+        "id": "275cfcf969ee4c08",
+        "type": "json",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "x": 610,
+        "y": 840,
+        "wires": [
+            [
+                "a6395c9e556a376e"
+            ]
+        ]
+    },
+    {
+        "id": "e99f978a9ade69d7",
+        "type": "json",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 210,
+        "y": 440,
+        "wires": [
+            [
+                "168634725ec0ad92"
+            ]
+        ]
+    },
+    {
+        "id": "c6acd2fbc7c00ee8",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Solar Limit restore",
+        "func": "msg.topic = \"SolarLimit\";\nflow.set(\"FlowTopic\",\"SolarLimit\");\nmsg.payload = global.get(\"SolarLimit\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 580,
+        "wires": [
+            [
+                "161932dd20860d75"
+            ]
+        ]
+    },
+    {
+        "id": "4bac76060be2946e",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Solar ON Diff  Restore",
+        "func": "msg.topic = \"SolarOnDiff\";\nflow.set(\"FlowTopic\",\"SolarOnDiff\");\nmsg.payload = global.get(\"SolarOnDiff\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 640,
+        "wires": [
+            [
+                "ebfb263427421b05"
+            ]
+        ]
+    },
+    {
+        "id": "e6ad8b656ff0515f",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Solar OFF Diff  Restore",
+        "func": "msg.topic = \"SolarOffDiff\";\nflow.set(\"FlowTopic\",\"SolarOffDiff\")\nmsg.payload = global.get(\"SolarOffDiff\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 680,
+        "wires": [
+            [
+                "f6e9cf059ff7aa2a"
+            ]
+        ]
+    },
+    {
+        "id": "ebf2ea3881f2ff26",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Refresh global vars",
+        "func": "global.set(msg.topic,msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 720,
+        "wires": [
+            [
+                "cb071e8f61dedbba"
+            ]
+        ],
+        "info": "Rewrites restored global vars if change occured.  "
+    },
+    {
+        "id": "c014b22d73aad97e",
+        "type": "exec",
+        "z": "7bdd2689f8e52628",
+        "command": "scp timewatch2 homeseer@homeseer:",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "10",
+        "winHide": false,
+        "oldrc": false,
+        "name": "scp to watchdog",
+        "x": 900,
+        "y": 140,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c0b5e0ca49749453",
+        "type": "file",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "filename": "timewatch2",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "c014b22d73aad97e"
+            ]
+        ]
+    },
+    {
+        "id": "898c7a253f736127",
+        "type": "inject",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "$now() ",
+        "payloadType": "jsonata",
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "c0b5e0ca49749453"
+            ]
+        ]
+    },
+    {
+        "id": "0b878aa11dd06079",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Propane Limit Restore",
+        "func": "msg.topic = \"PropaneLimit\";\n\nflow.set(\"FlowTopic\",\"PropaneLimit\");\nmsg.payload = global.get(\"PropaneLimit\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "6c2f5d488d97b06d"
+            ]
+        ]
+    },
+    {
+        "id": "6c2f5d488d97b06d",
+        "type": "ui_numeric",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "label": "Propane Heater Limit",
+        "tooltip": "",
+        "group": "3c51f0135126dcab",
+        "order": 21,
+        "width": "4",
+        "height": "1",
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "75",
+        "max": "105",
+        "step": 1,
+        "className": "",
+        "x": 680,
+        "y": 500,
+        "wires": [
+            [
+                "2de0950440431c68"
+            ]
+        ]
+    },
+    {
+        "id": "d5329233f88b02f0",
+        "type": "ui_numeric",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "label": "Propane Delta",
+        "tooltip": "",
+        "group": "bbbd23aca0db2c0c",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "6",
+        "step": ".2",
+        "className": "",
+        "x": 680,
+        "y": 740,
+        "wires": [
+            [
+                "ebf2ea3881f2ff26"
+            ]
+        ]
+    },
+    {
+        "id": "2813fcaff327c3c3",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "Propane Delta  Restore",
+        "func": "msg.topic = \"PropaneDelta\";\nflow.set(\"FlowTopic\",\"PropaneDelta\")\nmsg.payload = global.get(\"PropaneDelta\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "d5329233f88b02f0"
+            ]
+        ]
+    },
+    {
+        "id": "9b5b95e1c859a109",
+        "type": "hs-device",
+        "z": "7bdd2689f8e52628",
+        "name": "P5 Pool Propane Heater Temperature",
+        "device": "266",
+        "server": "dacc07b33637c6a4",
+        "feature": "294",
+        "reportonstartup": true,
+        "x": 1090,
+        "y": 560,
+        "wires": [
+            [
+                "1b8e09f9fd4d0677"
+            ]
+        ]
+    },
+    {
+        "id": "1b8e09f9fd4d0677",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "func": "var tempo = msg.payload.value;\nif (typeof tempo == \"number\"){\nvar mytopic = flow.get(\"FlowTopic\"); \nmsg.topic = \"PropaneLimit\";\n\nmsg.payload = tempo; \nreturn msg; }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 500,
+        "wires": [
+            [
+                "ebf2ea3881f2ff26",
+                "67c973ba4918c660"
+            ]
+        ]
+    },
+    {
+        "id": "2de0950440431c68",
+        "type": "function",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "func": "var tempo = msg.payload;\nmsg.payload = {value : tempo}\nmsg.topic = \"update\"\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 500,
+        "wires": [
+            [
+                "9b5b95e1c859a109"
+            ]
+        ]
+    },
+    {
+        "id": "67c973ba4918c660",
+        "type": "delay",
+        "z": "7bdd2689f8e52628",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 440,
+        "wires": [
+            [
+                "34d3fb26d3ec4ff7"
+            ]
+        ]
+    }
+]
